@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean shouldOverideUrlLoading(WebView view, String url) {
             view.loadUrl(url);
             return true;
+
         }
 
     }
