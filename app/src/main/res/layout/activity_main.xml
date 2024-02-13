@@ -13,6 +13,7 @@
         android:layout_marginStart="6dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="4dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,12 +38,14 @@
         android:layout_width="136dp"
         android:layout_height="48dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginBottom="6dp"
+        android:onClick="show"
         android:text="Enter"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/wV"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

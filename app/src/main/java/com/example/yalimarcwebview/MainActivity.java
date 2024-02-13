@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         wV.loadUrl(stringUrl);
         wV.setWebViewClient(new MyWebViewClient());
 
+    }
+
+    public void show(View view) {
+        wV.setVisibility(WebView.VISIBLE);
     }
 
     private class MyWebViewClient extends WebViewClient {
